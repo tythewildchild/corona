@@ -1,4 +1,5 @@
 const worldometers = require('../../objects/worldometers')
+const { casesPerMillionArray } = require('../../objects/worldometers')
 
 describe('webdriver.io page', () => {
     
@@ -6,9 +7,17 @@ describe('webdriver.io page', () => {
         browser.url('https://www.worldometers.info/coronavirus/country/us/')
     })
 
-    it('Collects Data from the table', () => {
-        // worldometers.statesArray();
-        worldometers.totalDeathsArray();
+    it('Collects Data from the table and prints them', () => {
+        // let array = worldometers.defaultArray();
+        // for(let i = 0; i < array.length; i++){
+        //     console.log(array[i]);
+        // }
+        
+        let array = worldometers.deathsPerMillionAscendingArray();
+        for(let i = 0; i < array.length; i++){
+            console.log(array[i]);
+        }
+
         browser.pause(5000000);
     })
 
