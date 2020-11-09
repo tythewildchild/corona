@@ -1,7 +1,6 @@
 {
   "name": "Corona_Tracker",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,11 +10,29 @@
   "license": "ISC",
   "devDependencies": {
     "@wdio/cli": "^6.4.0",
-    "@wdio/local-runner": "^6.4.0",
-    "@wdio/mocha-framework": "^6.4.0",
-    "@wdio/spec-reporter": "^6.4.0",
-    "@wdio/sync": "^6.4.0",
+    "@wdio/local-runner": "^6.7.3",
+    "@wdio/mocha-framework": "^6.7.3",
+    "@wdio/spec-reporter": "^6.7.0",
+    "@wdio/sync": "^6.7.3",
     "chromedriver": "^84.0.1",
-    "wdio-chromedriver-service": "^6.0.3"
-  }
+    "wdio-chromedriver-service": "^6.0.4"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "flat": "^4.1.0",
+    "is-arguments": "^1.0.4",
+    "is-buffer": "^2.0.4",
+    "is-callable": "^1.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tythewildchild/corona.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tythewildchild/corona/issues"
+  },
+  "homepage": "https://github.com/tythewildchild/corona#readme",
+  "description": ""
 }
